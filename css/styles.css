@@ -498,6 +498,11 @@ a {
 }
 
 /* Video Testimonial */
+.video-section {
+    background: var(--white);
+    padding: 60px 0;
+}
+
 .video-testimonial-section {
     margin-top: 60px;
     padding-top: 40px;
