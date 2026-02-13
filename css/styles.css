@@ -548,6 +548,7 @@ a {
     background: var(--black);
 }
 
+.video-container video,
 .video-container iframe {
     position: absolute;
     top: 0;
