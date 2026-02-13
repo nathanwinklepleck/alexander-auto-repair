@@ -1,4 +1,21 @@
 // =====================
+// Hero Background Slideshow
+// =====================
+const heroSlides = document.querySelectorAll('.hero-slide');
+let currentSlide = 0;
+
+function nextSlide() {
+    heroSlides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % heroSlides.length;
+    heroSlides[currentSlide].classList.add('active');
+}
+
+// Change slide every 5 seconds
+if (heroSlides.length > 0) {
+    setInterval(nextSlide, 5000);
+}
+
+// =====================
 // Mobile Menu Toggle
 // =====================
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
